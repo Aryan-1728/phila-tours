@@ -1,0 +1,54 @@
+.large-hero{
+    position: relative;
+
+    & img{
+        width: 100%;
+    }
+
+    &__text-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 2.9rem;
+        color: $mainBlue;
+        font-weight: 500;
+        text-align: center;
+
+        @mixin smallScreen{
+            font-size: 4.875rem
+        }
+    }
+
+    &__subtitle{
+        font-size: 1.5rem;
+        color: $mainBlue;
+        font-weight: 400;
+        text-align: center;
+        margin-botton: 0.9rem;
+
+        @mixin smallScreen{
+            font-size: 2.9rem
+        }
+    } 
+
+
+    &__description{
+        color: $white;
+        font-size: 1.1rem;
+        max-width: 26rem;
+        text-align: center;
+        margin-bottom: 0.9rem;
+
+        @mixin smallScreen{
+            font-size: 1.875rem;
+        }
+    }    
+}
+
+
+

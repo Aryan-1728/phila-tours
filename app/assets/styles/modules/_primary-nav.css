@@ -1,0 +1,54 @@
+.primary-nav{
+    ul{
+        padding: 0;
+
+        @mixin mediumScreen{
+            margin-bottom: 0;
+        }
+    }
+
+    li{
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 1.3rem;
+
+        @mixin mediumScreen{
+            padding-right: 1rem;
+        }
+
+        a{
+            padding: 0.5rem 0.4rem;
+            color: $white;
+            background-color: rgba(47,48,114,0.3);
+            display: block;
+            font-weight: 300;
+            cursor: pointer;
+            transition: 0.3s all ease-out;
+
+            @mixin mediumScreen{
+                background-color: transparent;
+            }
+            &.is-active{
+                color: $mainOrange;
+            }
+        }
+        a:hover{
+            background-color: $mainBlue;
+        }
+    }
+
+    li:nth-child(3){
+        padding-right: 0;
+
+        @mixin mediumScreen{
+            padding-right: 1.2rem;
+        }
+    }
+
+    &__pull-right{
+        
+        @mixin mediumScreen{
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@define-mixin smallScreen{
+    @media(min-width:550px){
+        @mixin-content
+    }
+}
+
+@define-mixin mediumScreen{
+    @media(min-width:992px){
+        @mixin-content
+    }
+}
+
+@define-mixin largeScreen{
+    @media(min-width:1200px){
+        @mixin-content
+    }
+}
+
+

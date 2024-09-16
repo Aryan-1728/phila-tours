@@ -1,0 +1,16 @@
+.footer{
+    background-color: $mainBlue;
+    padding: 1rem 0;
+
+    &__text{
+        text-align: center;
+        color: $white;
+
+        p{
+            margin-bottom: 0;
+        }
+        a{
+            color: $mainOrange;
+        }
+    }
+}

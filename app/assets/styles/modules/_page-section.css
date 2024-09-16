@@ -1,0 +1,33 @@
+.page-section{
+    padding: 3rem 0;
+
+    @mixin smallScreen{
+        padding: 4.5rem;
+    }
+
+    &__no_padding_until_large{
+        padding: 3rem 0;
+
+        @mixin largeScreen{
+            padding: 4.5rem;
+        }
+    }
+
+    &__display-image{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        @mixin smallScreen{
+            margin-top: 3.2rem;
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &__blue{
+        background-color: $mainBlue;
+    }
+
+    &__testimonial{
+        background-color: #E0E6EF;
+    }
+}

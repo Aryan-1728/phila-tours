@@ -1,0 +1,9 @@
+.generic-typography{
+    line-weight: 1.6;
+    font-weight: 300;
+    text-align: justify;
+
+    a{
+        font-weight: 400;
+    }
+}

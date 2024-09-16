@@ -1,0 +1,22 @@
+.button{
+    display: inline-block;
+    color: $white;
+    padding: 1rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease-out;
+
+    &__orange{
+        background-color: $mainOrange;
+
+        &:hover{
+            background-color: $darkOrange;
+            transition: 0.3s all ease-out;
+        }
+    }
+
+    &__small{
+        padding: 0.6rem 1.6rem;
+    }
+
+}    
+
